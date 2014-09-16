@@ -1,0 +1,50 @@
+<div class="portfolio-item"></div>
+
+<script type="text/x-handlebars-template" id="portfolio-template">
+
+	<div class="row heading">
+		<div class="col-sm-12">
+			<h1>{{item-title}}</h1>	
+		</div>
+	</div>
+	<div class="row">
+		<hr class="separator">
+		<div class="col-sm-6">
+			<div class="col-sm-12 box no-padding">
+				<img src="{{img-01-src}}" class="img-thumbnail">
+			</div>
+			{{#if img-02-src}}
+			<div class="col-sm-12 box no-padding">
+				<img src="{{img-02-src}}" class="img-thumbnail">
+			</div>
+			{{/if}}
+			{{#if img-03-src}}
+			<div class="col-sm-12 box no-padding">
+				<img src="{{img-03-src}}" class="img-thumbnail">
+			</div>
+			{{/if}}
+			{{#if img-04-src}}
+			<div class="col-sm-12 box no-padding">
+				<img src="{{img-04-src}}" class="img-thumbnail">
+			</div>
+			{{/if}}
+		</div>
+		<div class="col-sm-6">
+			<div class="col-sm-6 box no-padding">
+				<h3>Technologies/libraries:</h3>
+				<ul class="used-technologies no-padding">
+					{{#each technologies-used}}
+						<li>{{title}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="col-sm-12 box item-description no-padding">
+				<h3>Description:</h3>
+				<p>{{description}}</p>
+				<a href="{{github}}" class="btn-primary" target="_blank">see on github</a>
+			</div>
+		</div>
+	</div>
+	<p class="align-center"><a href="#/portfolio" class="btn-primary" >back to portfolio</a></p>
+
+</script>

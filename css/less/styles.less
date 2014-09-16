@@ -1,0 +1,155 @@
+@import 'variables.less';
+@import 'utility.less';
+
+/* HEADER */
+#header {
+	padding: 3em 0;
+	border-bottom: 0.1em solid #e8e8e8;
+
+	#logo {
+		float: left;
+		font-size: 2.3em;
+		letter-spacing: -0.05em;
+		text-transform: uppercase;
+	}
+
+	#main-nav {
+		float: right;
+		margin-top: .5em;
+	}
+}
+
+
+/* PARTIALS CONTAINER */
+#partials-container {
+	padding: 5em 0;
+
+	/* HOME PARTIAL */
+	#home-partial {
+
+		p {
+			font-size: 1.2em;
+			margin-bottom: 2em;
+		}
+
+		.heading h1 {
+			font-size: 1.3em;
+			text-transform: none;
+			font-weight: normal;
+
+			.antialiased;
+		}
+
+		.btn-primary {
+			display: block;
+			width: 17em;
+		}
+	}
+	
+	/* PORTFOLIO PARTIAL */
+	#portfolio-partial {
+		.btn-primary {
+			display: block;
+			width: 9.5em;
+		}
+	}
+
+	/* PORTFOLIO ITEM PARTIAL */
+	.portfolio-item {
+
+		.align-center {
+			margin-top: 2em;
+		}
+		
+		.img-thumbnail:hover {
+			background: #fff;
+			transform: none;
+			.drop-shadow();
+		}
+
+		h3 {
+			margin-bottom: .7em;
+			font-size: 1.1em;
+			text-transform: uppercase;
+		}
+
+		.item-description {
+			p {
+				margin-bottom: 3em;
+			}
+		}
+	}
+
+	/* ABOUT PARTIAL */
+	#about-partial {
+		h3 {
+			padding-top: 0;
+			text-transform: uppercase;
+			margin-bottom: 1em;
+		}
+
+		.btn-primary {
+			display: block;
+			width: 12.6em;
+		}
+		
+		.personal-info {
+			border-right: .1em solid #e8e8e8;
+			padding: 0 2em;
+		}
+
+		.graphs-container {
+			padding: 0 2em;
+			span { text-transform: uppercase; }
+		}
+
+		.graph {
+			height: 1em;
+			width: 1em;
+			margin-bottom: 2em;
+
+			&#html {.horizontal-gradient(#e54d26, #f49247);}
+			&#css {.horizontal-gradient(#006ebd, #2aa9de);}
+			&#photoshop {.horizontal-gradient(#3ab4e7, #185ca7);}
+			&#javascript {.horizontal-gradient(#396B6B, #05a8a7);}
+			&#php {.horizontal-gradient(#3D476A, #6b7dbb);}
+		}
+	}
+
+	/* CONTACT PARTIAL */
+	#contact-partial {
+		p {
+			line-height: 3em;
+		}
+
+		h2 {
+			font-weight: normal;
+			margin-bottom: 1em;
+		}
+
+		a {
+			color: #3d599a;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+
+/* FOOTER */
+#footer {
+	text-align: center;
+	background: @dark-grey;
+
+	.drop-shadow(0, 0, 5px, 0, .7);
+	
+	p {
+		padding: 5em 0;
+		color: lighten(@regular-text, 50%);
+	}
+}
+
+
+

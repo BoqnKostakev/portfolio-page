@@ -1,0 +1,39 @@
+<div id="portfolio-partial">
+
+	<div class="row heading">
+		<div class="col-sm-12">
+			<h1>portfolio</h1>	
+		</div>
+	</div>
+	
+	<div class="row box">
+		<hr class="separator">
+		<div class="col-sm-12">
+			<nav>
+				<ul id="portfolio-filter" class="inline align-center">
+					<li><a href="#" class="selected" data-category="cat-all">all</a></li>
+					<li><a href="#" data-category="cat-slice">slice</a></li>
+					<li><a href="#" data-category="cat-apps">apps</a></li>
+					<li><a href="#" data-category="cat-code">bits of code</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div id="portfolio-thumbnails-container" class="row box"></div>
+
+	<div class="row">
+		<div class="col-sm-12">
+			<a href="#/contact" class="btn-primary">contact me</a>
+		</div>
+	</div>
+	
+</div>
+
+<script id="portfolio-thumbnails-template" type="text/x-handlebars-template">
+    {{#each item}}
+    	<div class="col-sm-4 box portfolio-entry {{category}}">
+    		<a href="#/portfolio/{{id}}"><img src="images/{{img-source}}" class="img-thumbnail"></a>
+    	</div>
+    {{/each}}
+</script>

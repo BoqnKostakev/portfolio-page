@@ -1,0 +1,224 @@
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+
+html, body {
+	height:100%;
+}
+
+html, body, h1, h2, h3, p, img, header, footer, a, ul, li, section, article, nav, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	margin: 0;
+	font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: @regular-text;
+	background-color: #ffffff;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section{
+	display: block;
+}
+
+ul,
+ol,
+li {
+	list-style-type: none;
+}
+
+a {
+	background: transparent;
+	text-decoration: none;
+	color: @regular-text;
+}
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+strong {
+	font-weight: bold;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
+}
+
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0;
+}
+
+button {
+	text-transform: none;
+	-webkit-appearance: button;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+::selection {
+  background: @buttons;
+}
+
+::-moz-selection {
+  background: @buttons;
+}
+
+.img-thumbnail {
+	padding: 4px;
+	line-height: 1.42857143;
+	background-color: #ffffff;
+	border: .1em solid #dddddd;
+	
+	.round(8px);
+	.drop-shadow();
+
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		//background: @buttons;
+		.scale(1.02);
+		.drop-shadow(4px, 4px, 4px, 0, .4);
+	}
+}
+
+.antialiased {
+	-webkit-text-stroke-width: .25px;
+	-webkit-text-stroke-color: @regular-text;
+	-webkit-font-smoothing:antialiased;
+}
+
+.box {
+	margin-bottom: 2em;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.inline {
+	li {
+		display: inline-block;
+		padding: .5em .2em;
+		text-transform: uppercase;
+		font-weight: bold;
+
+		a {
+			padding: .5em;
+
+			.round(5px);
+			.transition(background);
+
+			&:hover {
+				background: @buttons;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.selected {
+	background : @buttons;
+	color: #fff;
+}
+
+.heading {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	margin-bottom: 2em;
+}
+
+.btn-primary {
+	background-color: @buttons;
+	color: #fff;	
+	font-size: 16px;
+	font-weight: bold;
+	height: 48px;
+	outline: none;
+	border: none;
+	margin-left: auto;
+	margin-right: auto;
+	
+	.round();
+	.inner-shadow(0, -3px, 0, 0, .2);
+	
+	padding: 12px 24px;
+	text-transform: uppercase;
+	
+	&:hover {
+		background-color: lighten(@buttons, 3%);
+	}
+	
+	&:active {
+		box-shadow: none;
+		height: 45px;
+		margin-top: 3px;
+	}
+}
+
+.separator {
+	height: .09em;
+	border: none;
+	width: 50%;
+	margin-bottom: 2.5em;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(232,232,232,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(232,232,232,1) 51%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1 );
+}
