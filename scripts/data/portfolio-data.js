@@ -13,7 +13,7 @@ var portfolioData = (function() {
 			title: 'CSS 3'
 		}],
 		'description': 'One-page responsive PSD to HTML theme. It was my first time using media queries and fluid layout. The PSD was not-responsive so i decided where the breakpoints should be. At this time i was not very familiar with javascript so the code snippet for responsive drop-down navigation is copied from the net. The theme is tested on: Chrome, FF, Opera, IE(9, 8, 7)',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/blue-easy'
 	}, {
 		'id': 2,
 		'item-title': 'PSD to HTML',
@@ -26,7 +26,7 @@ var portfolioData = (function() {
 			title: 'CSS 3 / LESS'
 		}],
 		'description': 'Responsive PSD to HTML exercise this time using LESS. I\'m using node + sublime-text 2 - "Less2css" plugin to compile less files. Again the PSD was not-responsive so the breakpoints are my decision. The theme is tested on: Chrome, FF, Opera, IE(9, 8, 7)',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/wheat-psd'
 	}, {
 		'id': 3,
 		'item-title': 'flat',
@@ -38,7 +38,7 @@ var portfolioData = (function() {
 			title: 'CSS 3'
 		}],
 		'description': 'Just another slice practice nothing much to say. IE7 doesn\'t like it very much.',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/flat'
 	}, {
 		'id': 4,
 		'item-title': 'corp-design',
@@ -51,7 +51,7 @@ var portfolioData = (function() {
 			title: 'CSS 3'
 		}],
 		'description': 'Sliced PSD with implemented carousel and photo-view plugins',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/corp-design'
 	}, {
 		'id': 5,
 		'item-title': 'flat green',
@@ -67,7 +67,7 @@ var portfolioData = (function() {
 			title: 'Javascript'
 		}],
 		'description': 'My very first try for creating and styling web page. There is no PSD here, i just redrawn the visual design in CSS from the images of paid theme, just watch and code... There are some very unsemantic things going on in the markup so my advice is don\t watch it (i\'m sure that in the styling is the same). However it\'s my first "thing" and there is no room for words like - cross-browser(chrome only), responsive, semantic, DRY ect. but the page has sticky nav, the nav logo is "scroll-to-top" button and last but not, it looks great.',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/flat-green'
 	}, {
 		'id': 6,
 		'item-title': 'sheeps vs rams',
@@ -87,7 +87,7 @@ var portfolioData = (function() {
 			title: 'underscore-js'
 		}],
 		'description': 'Sheeps vs Rams is simple number guessing game. Computer automatically generates number with four unique digits and user tries to guess it. The game has scoreboard wich stores user-scores in the browser local-sotrage after finding the "secret number". The code is organised in 5 different modules - ui, validation, score-storage, logic and main module. For loading modules i\'m using Require.js',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/sheeps-rams'
 	}, {
 		'id': 7,
 		'item-title': 'quiz',
@@ -103,7 +103,7 @@ var portfolioData = (function() {
 			title: 'Javascript / jQuery'
 		}],
 		'description': 'My first JS application. On purpose language is bulgarian because of the targeted audience. The code definitely needs refactoring and better structure. The UI here was not a key point, i was focused more on building the game logic. After all i am satisfied with the final result, quiz was tested with family and friends and they enjoyed it.',
-		'github': 'http://www.github.com'
+		'github': 'https://github.com/BoqnKostakev/quiz'
 	}, {
 		'id': 8,
 		'item-title': 'bits of code',
