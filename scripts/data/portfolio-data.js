@@ -113,6 +113,18 @@ var portfolioData = (function() {
 		}],
 		'description': 'checkout "bits of code" section on my github. There you can find JS code-snippets, plugins, experiments and other code that i wrote.',
 		'github': 'http://www.github.com'
+	}, {
+		'id': 9,
+		'item-title': 'clear water',
+		'img-01-src': 'images/clear-water/01.jpg',
+		'img-02-src': 'images/clear-water/02.jpg',
+		'technologies-used': [{
+			title: 'HTML'
+		}, {
+			title: 'CSS3'
+		}],
+		'description': 'Sliced PSD',
+		'github': 'https://github.com/BoqnKostakev/clear-water'
 	}];
 
 	thumbnails = [{
@@ -147,6 +159,10 @@ var portfolioData = (function() {
 		'category': 'cat-code',
 		'id': '8',
 		'img-source': 'code-bits/code-thumb.jpg'
+	}, {
+		'category': 'cat-slice',
+		'id': '9',
+		'img-source': 'clear-water/01.jpg'
 	}];
 
 	return {
